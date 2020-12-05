@@ -1,0 +1,35 @@
+{
+  "name": "rokket-labs-backend",
+  "version": "1.0.0",
+  "description": "Node.js Restful CRUD API with Node.js, Express and MongoDB",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d dist/index.js",
+    "start": "npm run build && node dist/index.js",
+    "restart": "rimraf dist && npm run start",
+    "dev": "nodemon --exec npm run restart"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "rest",
+    "api",
+    "mongodb"
+  ],
+  "author": "leonelhrp",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.8.10",
+    "nodemon": "^2.0.6",
+    "rimraf": "^3.0.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.8",
+    "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.12.7"
+  }
+}
